@@ -25,6 +25,12 @@ const Navbar = () => {
         router.push('/About')
     }
    // console.log(pathName)
+
+   //conditionl layout
+   if(pathName.includes('dashboard')){
+    return <div className="bg-green-200 ">Dashboard nav</div>;
+   }else if(pathName.includes('About'))
+    return null;
     return (
         <nav className="flex  justify-between">
             <h3>Next <span className="text-orange-500">Hero</span></h3>
