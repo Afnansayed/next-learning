@@ -21,10 +21,10 @@ const Navbar = () => {
     ]
 
     const handleLogin = () => {
-        console.log('Login')
+       // console.log('Login')
         router.push('/About')
     }
-    console.log(pathName)
+   // console.log(pathName)
     return (
         <nav className="flex  justify-between">
             <h3>Next <span className="text-orange-500">Hero</span></h3>

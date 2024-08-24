@@ -1,9 +1,9 @@
 import React from 'react';
 
 const page = ({params}) => {
-    console.log(params.slug)
+   // console.log(params.slug)
     const {name,description} = blogs.find(blog => blog.slug === params.slug)
-    console.log(name)
+   // console.log(name)
     return (
         <div className='w-48 mx-auto mt-12 space-y-3'>
             <h1>{name}</h1>
