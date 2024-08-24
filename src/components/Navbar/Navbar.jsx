@@ -14,6 +14,10 @@ const Navbar = () => {
             title: 'About',
             path: '/About'
         }
+        ,{
+            title: 'Blogs',
+            path: '/Blogs'
+        }
     ]
 
     const handleLogin = () => {
