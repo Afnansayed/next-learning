@@ -18,6 +18,10 @@ const Navbar = () => {
             title: 'Blogs',
             path: '/Blogs'
         }
+        ,{
+            title: 'Posts',
+            path: '/Posts'
+        }
     ]
 
     const handleLogin = () => {
