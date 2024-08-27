@@ -22,6 +22,10 @@ const Navbar = () => {
             title: 'Posts',
             path: '/Posts'
         }
+        ,{
+            title: 'Meals',
+            path: '/meals'
+        }
     ]
 
     const handleLogin = () => {
