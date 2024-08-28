@@ -1,13 +1,16 @@
-import { getPosts } from '@/Services/postApi';
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 import React from 'react';
 
-// const getPosts = async () => {
-//   const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-//   const data = await res.json();
-//   return data;
+const getPosts = async () => {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const data = await res.json();
+  if(data){
+    redirect(`/Posts/${data[0].id}`)
+  }
+  return data;
      
-// }
+}
 const PostsPage = async () => {
     const posts = await getPosts();
    // console.log(posts)
