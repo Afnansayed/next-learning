@@ -10,7 +10,7 @@ import React from 'react';
 // }
 const PostsPage = async () => {
     const posts = await getPosts();
-    console.log(posts)
+   // console.log(posts)
     return (
         <div>
               <div className='grid grid-cols-3 gap-5'>
