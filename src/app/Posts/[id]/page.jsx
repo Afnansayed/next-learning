@@ -8,7 +8,7 @@ import React from 'react';
 // }
 const PostsDetailsPage = async ({params}) => {
    const post = await getPostDetails(params.id);
-   console.log(post)
+   //console.log(post)
     return (
         <div>
              <h3>Post Details Page {params.id}</h3> 

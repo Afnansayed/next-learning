@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation';
 import React from 'react';
 
 const getPosts = async () => {
-    console.log(process.env.NEXT_PUBLIC_API_URL)
+    //console.log(process.env.NEXT_PUBLIC_API_URL)
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/posts`);
   const data = await res.json();
 //   if(data){
